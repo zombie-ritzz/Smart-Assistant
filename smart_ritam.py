@@ -36,8 +36,8 @@ def sendEmail(to, content):
             server.starttls()  #transfer the mail
             SUBJECT = "testing mail"
             message='testing mail:{}\n\n{}'.format(SUBJECT,content)
-            server.login('iamtheengineerguy1928@gmail.com','Rit@mp@l9')
-            server.sendmail('iamtheengineerguy1928@gmail.com',to,message)
+            server.login('xxxx@gmail.com','#######')
+            server.sendmail('xxxx@gmail.com',to,message)
             server.close()
 
 def takeCommand():
@@ -108,7 +108,7 @@ if __name__=="__main__":
                 print("say something...")
                 speak("What should I say?")
                 content = takeCommand()
-                to="dipayankarmakar916@gmail.com"
+                to="yyyyyyyy@gmail.com"
                 sendEmail (to,content)
                 speak ("Email has been sent!")
             except Exception as e:
@@ -116,7 +116,7 @@ if __name__=="__main__":
                 speak("Sorry!! I'm not able to sent the email")
         elif 'send message from whatsapp' in q:
             try:
-                kit.sendwhatmsg("+919163291146","Hi...i'm Ritam's python assistant.",22,55)
+                kit.sendwhatmsg("+911234567895","Hi...i'm Ritam's python assistant.",22,55)
                 print("Sucessfully Sent!!")
             except Exception as e:
                 print(e)
